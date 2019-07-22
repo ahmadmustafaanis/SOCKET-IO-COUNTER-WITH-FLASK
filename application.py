@@ -1,12 +1,12 @@
 import os
 import requests
 
-from flask import Flask , render_template , request, jsonify
+from flask import Flask , jsonify, render_template , request
 from flask_socketio import SocketIO , emit
 
 app=Flask(__name__)
 app.config["SECRET_KEY"]=os.getenv("SECRET_KEY")
-soceketio=SocketIO(app)
+socketio=SocketIO(app)
 
 @app.route("/")
 def index():
