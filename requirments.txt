@@ -1,0 +1,4 @@
+jinja 2,
+flask,
+requests,
+python 3
